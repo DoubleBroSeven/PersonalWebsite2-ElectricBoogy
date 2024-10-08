@@ -11,6 +11,10 @@ nav > section {
     flex-direction: column;
 }
 
+footer {
+    margin-top: auto;
+}
+
 footer nav{
     justify-content: center;
 }
@@ -66,7 +70,29 @@ body {
     border-color: #44633f;
     border-width: 1rem;
     border-style: ridge;
-    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+}
 
+form section {
+    display: flex;
+    flex-direction: row;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+#message {
+    width: 45vh;
+    height: 24vh;
+}
