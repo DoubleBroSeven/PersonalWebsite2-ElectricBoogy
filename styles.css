@@ -36,16 +36,17 @@ a {
 
 body article {
     display: flex;
-    padding: 2%;
 }
  section:nth-child(1) {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    max-height: fit-content;
-    font-size: larger;
+    min-height: fit-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+    font-size: 1.5vw;
+    margin: 1.5em;
  }
 
  span {
@@ -66,17 +67,22 @@ body {
     border-color: #44633f;
     border-width: 1rem;
     border-style: ridge;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.message {
-    display: flex;
-    flex-direction: column;
-}
 #message {
     width: 45vw;
     height: 24vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+body>header~footer {
+    min-height: fit-content;
+    max-height: 8%;
 }
